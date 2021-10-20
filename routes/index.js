@@ -12,7 +12,7 @@ const API_KEY_VALUE = process.env.API_KEY_VALUE
 // Init cache
 let cache = apicache.middleware
 
-router.get('/', cache('2 minutes'), async (req, res) => {
+router.get('/', cache('2 minutes'), async (req, res, next) => {
   try {
     const params = new URLSearchParams({
       [API_KEY_NAME]: API_KEY_VALUE,
@@ -29,7 +29,7 @@ router.get('/', cache('2 minutes'), async (req, res) => {
 
     res.status(200).json(data)
   } catch (error) {
-    res.status(500).json({ error })
+    next(error)
   }
 })
 
