@@ -18,13 +18,13 @@ npm run dev
 
 ### Add public API info
 
-Rename .env.example to .env and edit the values
+Rename **.env.example** to **.env** and edit the values
 
 If the public API URL is **https://api.openweathermap.org/data/2.5/weather?q={city}&appid={APIkey}**
 
-API_BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
-API_KEY_NAME = "appid"
-API_KEY_VALUE = "YOUR API KEY"
+- API_BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
+- API_KEY_NAME = "appid"
+- API_KEY_VALUE = "YOUR API KEY"
 
 You can add on any other query params as needed when hitting the /api endpoint such as https://yourdomain/api?q=detroit without having to add your key in the client
 
