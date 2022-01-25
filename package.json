@@ -1,7 +1,7 @@
 {
-  "name": "api-proxy-server",
+  "name": "api-gl",
   "version": "1.0.0",
-  "description": "Proxy server to hide public API keys with rate limiting, caching",
+  "description": "API Rest usando como banco de dados CouchDB e Front-End React",
   "main": "index.js",
   "scripts": {
     "start": "node index",
@@ -10,12 +10,10 @@
   "author": "Brad Traversy",
   "license": "MIT",
   "dependencies": {
-    "apicache": "^1.6.2",
     "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "express-rate-limit": "^5.5.0",
-    "needle": "^3.0.0"
+    "nano": "^9.0.5",
+    "react": "^17.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.14"
